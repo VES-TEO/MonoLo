@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Monolo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #BE3455;
+        }
+
+        header {
+            background-color: #E98CAE;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #BE3455;
+        }
+
+        header img {
+            width: 70px;
+            height: auto;
+        }
+
+        header h1, .login-link a {
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+            color: #BE3455;
+        }
+
+        header h2 {
+            margin: 0;
+            margin-left: auto;
+        }
+
+        .login-container {
+            width: 80%;
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-container label {
+            color: #000000;
+        }
+
+        .login-container input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-container button {
+            padding: 10px;
+            background-color: #BE3455;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #A22E46;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .register-link a {
+            color: #BE3455;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo">
+    <h1>Monolo</h1>
+    <h2><a href="login.html">Log In</a></h2>
+</header>
+
+<div class="login-container">
+    <form action="process_login.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="register-link">
+        <p>Non sei ancora registrato? <a href="registrazione.html">Registrati qui</a>.</p>
+    </div>
+</div>
+
+</body>
+</html>
